@@ -7,10 +7,10 @@ body {
   border: 2px solid green;
   display: flex;
   justify-content: space-around;
+  height: 100vh;
 }
 h1,
-h2,
-p {
+h2 {
   margin: 0px;
   padding: 0px;
 }
@@ -34,16 +34,21 @@ p {
   flex-direction: column;
 }
 .main-content .heading {
-  width: 90%;
-  font-size: 64px;
+  max-width: 20ch;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Space Mono", monospace;
 }
-p {
-  max-width: 28ch;
+
+.paragraph {
+  max-width: 26ch;
   font-family: "Space Mono", monospace;
-  margin: 20px;
+  font-family: "Space Mono", monospace;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #4f4f4f;
 }
 button {
   background-color: #333333;
@@ -52,7 +57,47 @@ button {
   padding: 15px 30px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+
   font-size: 14px;
   text-transform: uppercase;
+  margin-top: 30px;
+}
+@media screen and (max-width: 500px) {
+  .main {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+  }
+  .main-img {
+    margin-top: 150px;
+  }
+  .main-img img {
+    width: 200px;
+    height: 200px;
+  }
+  .main-content {
+    width: 100%;
+  }
+  .main-content .heading {
+    max-width: 26ch;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Space Mono", monospace;
+    text-transform: capitalize;
+  }
+  .paragraph {
+    font-size: 20px;
+    font-weight: 200;
+    max-width: 26ch;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  button {
+    font-size: 10px;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+  }
 }
