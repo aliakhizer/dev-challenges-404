@@ -1,4 +1,5 @@
 body {
+  font-family: "Space Mono", monospace;
   margin: 0px;
   padding: 0px;
 }
@@ -7,10 +8,15 @@ img {
   display: block;
   max-width: 100%;
 }
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 44px;
+  margin-left: 77px;
+}
 
 .main {
   display: flex;
-  justify-content: space-around;
   height: 100vh;
   gap: 10px;
   padding: 0px 20px;
@@ -43,14 +49,11 @@ h2 {
   max-width: 30ch;
   font-size: 64px;
   font-weight: 700;
-  font-family: "Space Mono", monospace;
   line-height: 94.78px;
 }
 
 .paragraph {
   max-width: 27ch;
-  font-family: "Space Mono", monospace;
-  font-family: "Space Mono", monospace;
   font-size: 24px;
   font-weight: 400;
   color: #4f4f4f;
@@ -70,7 +73,23 @@ button {
   padding: 24px 43px;
   margin-top: 64px;
 }
+footer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #bdbdbd;
+  text-align: center;
+  margin-top: 331px;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 500px) {
+  h3 {
+    margin-left: 24px;
+  }
   .main {
     display: flex;
     flex-direction: column;
@@ -91,7 +110,6 @@ button {
     width: 12ch;
     font-size: 48px;
     font-weight: 700;
-    font-family: "Space Mono", monospace;
     line-height: 71.09px;
     margin-top: 60px;
   }
@@ -101,12 +119,13 @@ button {
     margin-top: 30px;
     max-width: 26ch;
     line-height: 26.66px;
-    font-family: "Space Mono", monospace;
   }
   button {
     font-size: 14px;
     margin-top: 66px;
-    font-family: "Space Mono", monospace;
     line-height: 20.73px;
+  }
+  .footer {
+    margin-top: 144px;
   }
 }
