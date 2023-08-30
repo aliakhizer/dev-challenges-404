@@ -3,11 +3,17 @@ body {
   padding: 0px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .main {
-  border: 2px solid green;
   display: flex;
   justify-content: space-around;
   height: 100vh;
+  gap: 10px;
+  padding: 0px 20px;
 }
 h1,
 h2 {
@@ -34,70 +40,73 @@ h2 {
   flex-direction: column;
 }
 .main-content .heading {
-  max-width: 20ch;
-  font-size: 40px;
+  max-width: 30ch;
+  font-size: 64px;
   font-weight: 700;
-  text-transform: uppercase;
   font-family: "Space Mono", monospace;
+  line-height: 94.78px;
 }
 
 .paragraph {
-  max-width: 26ch;
+  max-width: 27ch;
   font-family: "Space Mono", monospace;
   font-family: "Space Mono", monospace;
-  margin: 10px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
   color: #4f4f4f;
+  line-height: 35.54px;
+  margin-top: 36px;
 }
 button {
   background-color: #333333;
   border: none;
   color: white;
-  padding: 15px 30px;
+  font-size: 14px;
   text-align: center;
   text-decoration: none;
-
-  font-size: 14px;
+  font-weight: 700px;
   text-transform: uppercase;
-  margin-top: 30px;
+  line-height: 20.73px;
+  padding: 24px 43px;
+  margin-top: 64px;
 }
 @media screen and (max-width: 500px) {
   .main {
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 800px;
+    padding: 20px;
   }
   .main-img {
     margin-top: 150px;
+    width: 375px;
+    height: 949px;
   }
-  .main-img img {
-    width: 200px;
-    height: 200px;
-  }
+
   .main-content {
     width: 100%;
   }
   .main-content .heading {
-    max-width: 26ch;
-    font-size: 30px;
+    width: 12ch;
+    font-size: 48px;
     font-weight: 700;
-    text-transform: uppercase;
     font-family: "Space Mono", monospace;
-    text-transform: capitalize;
+    line-height: 71.09px;
+    margin-top: 60px;
   }
   .paragraph {
-    font-size: 20px;
-    font-weight: 200;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
     max-width: 26ch;
-    width: 100%;
-    margin-bottom: 0px;
+    line-height: 26.66px;
+    font-family: "Space Mono", monospace;
   }
   button {
-    font-size: 10px;
-    padding: 10px 20px;
-    margin-bottom: 0px;
+    font-size: 14px;
+    margin-top: 66px;
+    font-family: "Space Mono", monospace;
+    line-height: 20.73px;
   }
 }
